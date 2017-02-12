@@ -7,11 +7,11 @@ def Welcome():
 def mainscreen():
     import os
     os.system('clear') 
-    print("\n \t \t \t MAIN SCREEN \n 1.ADD RECORD \n 2.READ RECORD \n 3.EXIT ")
+    print("\n \t \t \t MAIN SCREEN \n 1.ADD RECORD \n 2.READ RECORD \n 3.EXIT\n\t\t ")
 
    #input file name
 def filename():
-    filename=raw_input("\n \t >>> Enter file name")
+    filename=raw_input("\n \t >>> Enter file name \n\n\t ")
     return filename
   #open file in read mode 
 def readmode(filename):
@@ -40,10 +40,10 @@ def controller():
         
    #add record
 def addrecord(f1):
-        line=raw_input("Enter data")
+        line=raw_input("Enter data \n\n\t ")
         f1.write(line)
         f1.close()
-        choice=raw_input("\n \n \t DO YOU WANT TO CONTINUE ?  \n \t 1-YES \n \t 2-NO")
+        choice=raw_input("\n \n \t DO YOU WANT TO CONTINUE ?  \n \t 1-YES \n \t 2-NO\n\n\t")
         choice=int(choice)
         if choice==1:
            f1=addrecord(amode(filename()))
